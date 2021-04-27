@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo list</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="box" id="heading">
+
+    <h1> <%= listtitle %> </h1>
+</div>
+<div class="box">
+    
+       <%   for(var i=0; i<Newlistitem.length; i++){   %>
+        <div class="item">
+    
+            <input type="checkbox" name="" id="">
+            <p><%=   Newlistitem[i]  %></p>
+        </div>
+      <%    }%> 
+    
+      
+   
+
+<form type="text" action="/" method="POST">
+
+    <input type="text"  name="Newitem" id="" placeholder="new item">
+    <button type="submit" name="list" value="work">+</button>
+</form>
+</div>
+</body>
+</html>
